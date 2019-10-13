@@ -2168,8 +2168,8 @@ main (int argc, char *argv[])
 
 #ifndef NO_HELP
     if ( ! opts.noescape ) {
-        pinfo("Type [C-%c] [C-%c] to see available commands\r\n",
-              KEYC(opts.escape), KEYC(KEY_HELP));
+        // pinfo("Type [C-%c] [C-%c] to see available commands\r\n",
+              // KEYC(opts.escape), KEYC(KEY_HELP));
     }
 #endif
     pinfo("Terminal ready\r\n");
