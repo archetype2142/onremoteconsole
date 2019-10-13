@@ -1952,7 +1952,7 @@ parse_args(int argc, char *argv[])
 
 #ifndef NO_HELP
     printf("On-Remote serial access v%s\n", VERSION_STR);
-    printf("Connected!")
+    printf("Connected!");
     printf("\n");
     // printf("port is        : %s\n", opts.port);
     // printf("flowcontrol    : %s\n", flow_str[opts.flow]);
@@ -2187,10 +2187,10 @@ main (int argc, char *argv[])
         cleanup(1 /* drain */, opts.noreset, opts.hangup);
 
     if ( ler == LE_SIGNAL ) {
-        pinfo("Picocom was killed\r\n");
+        pinfo("Onremote Serial was killed\r\n");
         xcode = EXIT_FAILURE;
     } else
-        pinfo("Thanks for using picocom\r\n");
+        pinfo("Thanks for using onRemote\r\n");
 
     return xcode;
 }
